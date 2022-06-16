@@ -1,0 +1,51 @@
+html {
+  background-color: rgb(52, 65, 96);
+  font-family: Arial, sans-serif;
+}
+
+form.joingame {
+  font-size: 25px;
+  color: black;
+  background-color: #9edfff;
+  border-color: #9edfff;
+  border-style: solid;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0,.4);
+}
+
+.custominput {
+  margin: 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.customsubmit {
+  height: 25px;
+  text-align: center;  
+}
+
+.gpininp {
+  width:20px;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.invalid {
+  font-size: 20px;
+  color: red;
+  display: none;
+}

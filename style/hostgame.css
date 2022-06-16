@@ -1,0 +1,36 @@
+html {
+  background-color: rgb(52, 65, 96);
+  font-family: Arial, sans-serif;
+}
+
+form.hostoptions {
+  font-size: 25px;
+  color: black;
+  background-color: #9edfff;
+  border-color: #9edfff;
+  border-style: solid;
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 100px rgba(0, 0, 0,.4);
+}
+
+.boardlength {
+  width: 60px;
+}
+
+.custominput {
+  height: 25px;
+  text-align: center;
+}
+
+.formtextinput {
+  height: 1px;
+}
