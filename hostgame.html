@@ -1,0 +1,43 @@
+<html>
+<head>
+	<title>Host Game</title>
+	<link href="style/hostgame.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <form class='hostoptions' id='hostoptions' action="gamescreen.html">
+    
+    <label for="obstacles">% obstacles on track</label><br>    
+    <input type="range" id="obs" name="obstacles" 
+     min="0" max="100" value="5" step="1" oninput="this.nextElementSibling.value = this.value">
+    <output>5</output>%
+
+    <br>
+
+    Board Length: <input type="number" class="boardlength custominput" id="boardlength" value="100">
+    
+    <br>
+
+    <label for="qset">Question set:</label>
+    <select class="qset custominput" id="qset" name="qset">
+      <option value="pselect" selected>-- Please Select --</option>
+      <option value="q2">Q2</option>
+      <option value="q3" >Q3</option>
+      <option value="custom">Custom</option>
+    </select>
+
+    <br>
+    <div id="customQ">
+    Custom: <input class='custominput' id='custominput' type = "text" name ="custom" disabled=true/>
+    </div>
+    <br><br>
+    
+    <input class="submit" id="submit" type="submit" value="Start Game" disabled=true>
+    
+  </form>
+  
+</body>
+
+<script src='scripts/hostgame.js'></script>
+
+</html>
