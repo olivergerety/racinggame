@@ -22,6 +22,8 @@ var jform = document.getElementById('joingame');
 
 var invalid = document.getElementById('invalid');
 
+var username = document.getElementById('nameinp')
+
 firebase.initializeApp(config);
 
 g1.oninput = function(){console.log(g1.value);if(g1.value !== '') {g2.focus();}}
@@ -37,9 +39,11 @@ g6.oninput = function(){console.log(g6.value);if(g6.value !== '') {
     console.log(currpins)
   
     if (currpins.includes(gpincombined)) {
-      console.log('in')
-      document.cookie = 'gpin='+gpincombined
-    jform.submit();
+      console.log('in');
+      document.cookie = 'gpin='+gpincombined;
+      console.log(username.value);
+      document.cookie = 'name='+username.value;
+      jform.submit();
     } else {
       console.log('not in');
       jform.reset();
